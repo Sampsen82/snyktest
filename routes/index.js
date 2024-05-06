@@ -186,7 +186,7 @@ exports.create = function (req, res, next) {
     // res.redirect('/#' + todo.content.toString('base64'));
   });
 };
-//
+
 exports.destroy = function (req, res, next) {
   Todo.findById(req.params.id, function (err, todo) {
 
